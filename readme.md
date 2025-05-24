@@ -17,11 +17,11 @@ Supported OCL methods include, categorized by OCL decoding:
 
 Object discovery performance with DINO2 ViT (s/14) for OCL encoding. VVO is instantiated as VQDINO; Tfd, TfdT, Mlp and Dfz are Transformer, Transformer-temporal, MLP and Diffusion for OCL decoding respectively.
 
-<img src="res/acc_vqdino_all.png" style="width:100%;">
+<img src="res/acc_vqdino_all.png" style="width:80%;">
 
 Using higher resolution.
 
-<img src="res/acc_vqdino_r384_coco.png" style="width:50%;">
+<img src="res/acc_vqdino_r384_coco.png" style="width:40%;">
 
 Qualitative  results.
 
