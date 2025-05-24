@@ -151,8 +151,8 @@ model = class_name(key1=value1,..)
 
 ## TODO
 
-- [] SPOT & VVO-Tfd9: To be integrated into this framework;
-- [] VideoSAUR & VVO-SmdT: To be integrated into this framework.
+- SPOT & VVO-Tfd9: To be integrated into this framework;
+- VideoSAUR & VVO-SmdT: To be integrated into this framework.
 
 
 
