@@ -68,7 +68,7 @@ Converted datasets, including ClevrTex, COCO, VOC and MOVi-D are available here 
 
 ## Model Checkpoints 🌟
 
-<span style="color:green">The checkpoints for all the models in the two tables above</span> are available as [releases](https://github.com/Genera1Z/VQ-VFM-OCL/releases).
+***The checkpoints for all the models in the two tables above*** are available as [releases](https://github.com/Genera1Z/VQ-VFM-OCL/releases).
 
 
 
@@ -157,3 +157,17 @@ model = class_name(key1=value1,..)
 I am now working on object-centric learning (OCL). If you have any cool ideas on OCL or issues about this repo, just contact me.
 - WeChat: Genera1Z
 - email: rongzhen.zhao@aalto.fi, zhaorongzhenagi@gmail.com
+
+
+
+### Citation
+
+If you find this repo useful, place cite our work.
+```
+@article{zhao2025vvo,
+  title={Vector-Quantized Vision Foundation Models for Object-Centric Learning},
+  author={Zhao, Rongzhen and Wang, Vivienne and Kannala, Juho and Pajarinen, Joni},
+  journal={arXiv preprint arXiv:2502.20263},
+  year={2025}
+}
+```
