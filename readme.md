@@ -60,30 +60,66 @@ Qualitative  results.
 
 
 
-## TODO
+## Converted Datasets 🚀
 
-- SPOT & VVO-Tfd9: To be integrated into this framework;
-- VideoSAUR & VVO-SmdT: To be integrated into this framework.
+Converted datasets, including ClevrTex, COCO, VOC and MOVi-D are available here [To be uploaded].
+
+
+
+## Model Checkpoints 🌟
+
+<span style="color:green">The checkpoints for all the models in the two tables above</span> are available as [releases](https://github.com/Genera1Z/VQ-VFM-OCL/releases).
 
 
 
 ## How to Use
 
-- Install requirements: ```pip install -r requirements.txt```. Use package versions no older than the specification.
-- Convert original datasets into LMDB format: ```python convert.py```. But firstly download original datasets according to docs of ```XxxDataset.convert_dataset()```.
-- Run train and eval: ```python train.py``` and ```python eval.py```. But firstly change the arguments marked with ```TODO XXX``` to your needs.
+### (1) Install requirements
 
+(Using Python version 3.11)
+```shell
+pip install -r requirements.txt
+```
+Use package versions no older than the specification.
 
+### (2) Prepare datasets
 
-## Converted Datasets
+Convert original datasets into LMDB format: 
+```shell
+python convert.py
+```
+But **firstly** download original datasets according to docs of ```XxxDataset.convert_dataset()```.
 
-Converted datasets, including ClevrTex, COCO, VOC and MOVi-D are available here.
+### (3) Pretrain and train
 
+Run training:
+```shell
+python train.py
+```
+But **firstly** change the arguments marked with ```TODO XXX``` to your needs.
 
+Specifically on training:
+- For SLATE/STEVE, SlotDiffusion and VQDION-Tfd/Mlp/Dfz, there are two stages for training. For example,
+```shell
+# 1. pretrain the VAE module
+python train.py --cfg_file config-slatesteve/vqvae-coco-c256.py
+# *. place the best VAE checkpoint at archive-slatesteve/vqvae-coco-c256/best.pth
+mv save archive-slatesteve
+# 2. train the OCL model
+python train.py --cfg_file config-slatesteve/slate_r_vqvae-coco.py --ckpt_file archive-slatesteve/vqvae-coco-c256/best.pth
+```
+- For DINOSAUR, there is only one training stage. For example,
+```shell
+python train.py --cfg-file config-dinosaur/dinosaur_r-coco.py
+```
 
-## Model Checkpoints
+### (4) Evaluate
 
-All checkpoints for the models in the two tables above are available here.
+Run evaluation:
+```shell
+python eval.py
+```
+Remember **firstly** modify the script according to your need.
 
 
 
@@ -109,8 +145,15 @@ model = class_name(key1=value1,..)
 
 
 
+## TODO
+
+- SPOT & VVO-Tfd9: To be integrated into this framework;
+- VideoSAUR & VVO-SmdT: To be integrated into this framework.
+
+
+
 ## About
 
-I am now working on object-centric learning. If you have any ideas about this please do not hesitate to contact me.
+I am now working on object-centric learning (OCL). If you have any cool ideas on OCL or issues about this repo, just contact me.
 - WeChat: Genera1Z
 - email: rongzhen.zhao@aalto.fi, zhaorongzhenagi@gmail.com

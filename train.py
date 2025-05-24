@@ -218,7 +218,7 @@ def parse_args():
         default="config-vqdino/vqdino-coco-c256.py",  # TODO XXX
         # default="config-vqdino/vqdino_tfd_r-coco.py",
     )
-    parser.add_argument(
+    parser.add_argument(  # TODO XXX
         "--data_dir", type=str, default="/media/GeneralZ/Storage/Static/datasets"
     )
     parser.add_argument("--save_dir", type=str, default="save")
