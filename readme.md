@@ -78,7 +78,7 @@ Converted datasets, including ClevrTex, COCO, VOC and MOVi-D are available here 
 
 ## How to Use
 
-### (1) Install requirements
+#### (1) Install requirements
 
 (Using Python version 3.11)
 ```shell
@@ -86,7 +86,7 @@ pip install -r requirements.txt
 ```
 Use package versions no older than the specification.
 
-### (2) Prepare datasets
+#### (2) Prepare datasets
 
 Convert original datasets into LMDB format: 
 ```shell
@@ -94,7 +94,7 @@ python convert.py
 ```
 But **firstly** download original datasets according to docs of ```XxxDataset.convert_dataset()```.
 
-### (3) Pretrain and train
+#### (3) Pretrain and train
 
 Run training:
 ```shell
@@ -117,7 +117,7 @@ python train.py --cfg_file config-slatesteve/slate_r_vqvae-coco.py --ckpt_file a
 python train.py --cfg-file config-dinosaur/dinosaur_r-coco.py
 ```
 
-### (4) Evaluate
+#### (4) Evaluate
 
 Run evaluation:
 ```shell
