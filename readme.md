@@ -169,7 +169,7 @@ I am now working on object-centric learning (OCL). If you have any cool ideas on
 If you find this repo useful, place cite our work.
 ```
 @article{zhao2025vvo,
-  title={Vector-Quantized Vision Foundation Models for Object-Centric Learning},
+  title={{Vector-Quantized Vision Foundation Models for Object-Centric Learning}},
   author={Zhao, Rongzhen and Wang, Vivienne and Kannala, Juho and Pajarinen, Joni},
   journal={arXiv preprint arXiv:2502.20263},
   year={2025}
