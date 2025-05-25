@@ -45,7 +45,7 @@ Qualitative  results.
         └ *.py
     └ model  # modules that compose OCL models
         └ *.py
-    └ learn  # callbacks, like logging and scheduling, metrics and optimizers
+    └ learn  # callbacks, metrics and optimizers
         └ *.py
     └ *.py
 - convert.py
