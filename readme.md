@@ -58,7 +58,7 @@ Qualitative  results.
 
 ## Features
 
-- **fp16 fast training** Auto-mixed precision training (fp16) is enabled. Most of the training can be finished in 10 hours using one V100 GPU.
+- **fp16 fast training** [Automatic mixed precision](https://docs.pytorch.org/tutorials/recipes/recipes/amp_recipe.html) training (fp32+fp16) is enabled. Most of the training can be finished less than 8 hours using one V100 GPU.
 - **less I/O overhead** Datasets are stored in [LMBD](https://lmdb.readthedocs.io) database format to save I/O overhead, beneficial especially on computing cluster.
 - **config-driven experiment** This is totally config-driven framework, largely inspired by [OpenMMLab](https://github.com/open-mmlab), but with much less capsulation.
 
