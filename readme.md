@@ -112,8 +112,8 @@ mv save archive-slatesteve
 # 2. train the OCL model
 python train.py --cfg_file config-slatesteve/slate_r_vqvae-coco.py --ckpt_file archive-slatesteve/vqvae-coco-c256/best.pth
 ```
- - For VQDINO-Tfd/Mlp, OCL models share the same ``config-vqdino/vqdino-xxx-c256.py`` and corresponding VAE checkpoint;
- - For VQDINO-Dfz, OCL models take ``config-vqdino/vqdino-xxx-c4.py`` and corresponding VAE checkpoint as pretraining.
+ - VQDINO-Tfd/Mlp models share the same ``config-vqdino/vqdino-xxx-c256.py`` and corresponding checkpoint as VAE pretraining;
+ - VQDINO-Dfz models take ``config-vqdino/vqdino-xxx-c4.py`` and corresponding checkpoint as VAE pretraining.
 
 - For DINOSAUR, there is only one training stage. For example,
 ```shell
