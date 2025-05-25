@@ -103,7 +103,7 @@ python train.py
 But **firstly** change the arguments marked with ```TODO XXX``` to your needs.
 
 Specifically on training:
-- For SLATE/STEVE, SlotDiffusion and VQDION-Tfd/Mlp/Dfz, there are two stages for training. For example,
+- For SLATE/STEVE, SlotDiffusion and VQDINO-Tfd/Mlp/Dfz, there are two stages for training. For example,
 ```shell
 # 1. pretrain the VAE module
 python train.py --cfg_file config-slatesteve/vqvae-coco-c256.py
@@ -112,6 +112,8 @@ mv save archive-slatesteve
 # 2. train the OCL model
 python train.py --cfg_file config-slatesteve/slate_r_vqvae-coco.py --ckpt_file archive-slatesteve/vqvae-coco-c256/best.pth
 ```
+  - For VQDINO-Tfd/Mlp, OCL models share the same ``config-vqdino/vqdino-xxx-c256.py`` and corresponding VAE checkpoint;
+  - For VQDINO-Dfz, OCL models take ``config-vqdino/vqdino-xxx-c4.py`` and corresponding VAE checkpoint as pretraining.
 - For DINOSAUR, there is only one training stage. For example,
 ```shell
 python train.py --cfg-file config-dinosaur/dinosaur_r-coco.py
