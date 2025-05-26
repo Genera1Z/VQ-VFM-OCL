@@ -239,11 +239,3 @@ class VVODfzT(VqVfmOclT):
         noise = rearrange(noise, "(b t) c h w -> b t c h w", b=b)
         return recon, noise
         # forward output: feature, zidx, quant, slotz, attent, recon, noise
-
-
-class VVOSmdT(VqVfmOclT):
-    """
-    Temporal VQ-VFM-OCL with SlotMixer decoder.
-    """
-
-    forward_decode = VVOMlpT.forward_decode
