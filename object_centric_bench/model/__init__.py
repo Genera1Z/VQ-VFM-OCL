@@ -51,6 +51,6 @@ from .slotdiffusion import (
     UNet2dCondition,
 )
 from .vaez import VQVAEZ, QuantiZ
-from .vqvfmocl import VVOTfd, VVOTfdT, VVOMlp, VVOMlpT, VVODfz, VVODfzT, VVOSmdT
+from .vqvfmocl import VVOTfd, VVOTfdT, VVOMlp, VVOMlpT, VVODfz, VVODfzT
 
 [register_module(_) for _ in locals().values() if isinstance(_, type)]
