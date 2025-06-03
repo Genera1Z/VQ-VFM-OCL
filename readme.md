@@ -83,6 +83,7 @@ Converted datasets, including ClevrTex, COCO, VOC and MOVi-D are available as [r
 - [vqdino_mlp](https://github.com/Genera1Z/VQ-VFM-OCL/releases/tag/vqdino_mlp): VQDINO-Mlp on ClevrTex, COCO and VOC.
 - [slotdiffusion](https://github.com/Genera1Z/VQ-VFM-OCL/releases/tag/slotdiffusion): SlotDiffusion on ClevrTex, COCO and VOC.
 - [vqdino_dfz](https://github.com/Genera1Z/VQ-VFM-OCL/releases/tag/vqdino_dfz): VQDINO-Dfz on ClevrTex, COCO and VOC.
+- [vqdino-r384](https://github.com/Genera1Z/VQ-VFM-OCL/releases/tag/vqdino-r384): VQDINO-Tfd/Mlp/Dfz on COCO with resolution 384x384 (336x336).
 
 
 
