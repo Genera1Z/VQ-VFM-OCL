@@ -1,4 +1,4 @@
-# VQ-VFM-OCL (VVO) *** Vector-Quantized Vision Foundation Models for Object-Centric Learning
+# VQ-VFM-OCL (VVO) &mdash Vector-Quantized Vision Foundation Models for Object-Centric Learning
 
 
 
