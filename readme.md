@@ -21,7 +21,7 @@ Please check our brand new OCL works:
 
 [![](https://img.shields.io/badge/arXiv-2502.20263-red)](https://arxiv.org/abs/2502.20263)
 [![](https://img.shields.io/badge/license-MIT-yellow)](LICENSE)
-[![](https://img.shields.io/badge/python-3.11-green)](https://www.python.org)
+[![](https://img.shields.io/badge/seeds-42,43,44-green)](https://www.python.org)
 [![](https://img.shields.io/badge/model-checkpoints-blue)](https://github.com/Genera1Z/VQ-VFM-OCL?tab=readme-ov-file#-model-checkpoints--training-logs)
 [![](https://img.shields.io/badge/training-logs-purple)](https://github.com/Genera1Z/VQ-VFM-OCL?tab=readme-ov-file#-model-checkpoints--training-logs)
 
